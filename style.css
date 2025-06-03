@@ -40,15 +40,91 @@ header {
     color: white;
   
   }
-  .social-links > a {
-    margin: 0 5px;
-   
-  }
-  .social-links img a:hover {
-    text-decoration: underline beige;
+ 
+
+  .social-links img:hover {
+     transform: scale(1.2);
    
   }
   .social-links img {
     width: 35px;
-    
+    transition: transform 0.3s ease;
+     margin: 0 5px;
   }
+
+/*project*/
+
+.Project-List {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.Project-card {
+  background-color: white;
+  border-left: 4px solid green;
+  padding: 15px;
+  border-radius: 8px;
+  width:250px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.113);
+  transition: 0.2s;
+}
+
+.Project-card:hover{
+  transform: translateY(-6px);
+}
+.Project-card > h3{
+  margin: 0;
+  color: green;
+
+}
+.Project-card > p {
+  font-size: 14px;
+  color: #444;
+}
+
+.Project-card > a {
+  display: inline-block;
+  padding: 8px 15px;
+  background-color: #007bff;
+  text-decoration: none;
+  color: white;
+  border: none;
+  border-radius: 6px; 
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+.Project-card a:hover{
+  background-color:#0056b3 ;
+}
+
+h2{
+  color: rgba(234, 76, 61, 0.979);
+}
+
+nav{
+  background-color: #333;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.navbar{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  margin: 0;
+  gap: 20px ;
+}
+.navbar >li > a {
+  color: #f9f9f9;
+  text-decoration: none;
+  padding: 6p 12px;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+.navbar > li > a:hover{
+  background-color: #0056b3;
+}
